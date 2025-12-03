@@ -1,0 +1,13 @@
+Algoritmo numMenor
+		definir num, anterior como enteros;
+		escribir " proporcione un numero";
+		leer anterior;
+		Repetir
+			escribir " proporcione un numero ( uno menor que el anterior para finalizar)";
+			leer num;
+			si num<= anterior Entonces
+				anterior<- num;
+			FinSi
+		Hasta Que num<= anterior
+		escribir "se proporciono  un numero menor al anterior";
+FinAlgoritmo

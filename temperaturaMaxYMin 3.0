@@ -1,0 +1,40 @@
+Algoritmo temperaturaMaxYMin
+	//entradas:dia, i, temp
+	//salidas:suma, prom, max, min
+		definir dia, i como entero;
+		definir suma, prom, max, min como reales;
+		definir temp como real;
+		suma<-0;
+		
+		dimensionar temp[7];
+		dia <-7;
+		//introduciendo valores en el vector
+		para i<-0 hasta dia-1 Hacer
+			escribir "proporcione la temperatura ", i;
+			leer temp[i];
+		FinPara
+		//sacando el promedio
+		para i<-0 hasta dia-1 Hacer
+			suma<- suma +temp[i];
+			
+		FinPara
+		prom<- suma/dia;
+		escribir " el promedio de las temperaturas es de: " , prom; 
+		//sacando la temperatura maxima
+		max<- temp[0];
+		para i<- 0 hasta dia-1 Hacer
+			si temp[i]> max entonces 
+				max<- temp[i];
+			FinSi
+		FinPara 
+		//sacando la temperatura minima
+		min<- temp[1];
+		
+		para  i<-0 hasta dia-1 Hacer
+			si temp[0]< min Entonces
+				min<- temp[i];
+			FinSi
+		FinPara
+		escribir " la tempertura minima es: ", min, " , la temperaturra max es: ", max;
+FinAlgoritmo
+

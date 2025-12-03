@@ -1,0 +1,27 @@
+Algoritmo restricciones
+		//entradas:antibioticos,tatuajes,pesoMenosDe50
+		//salida:"no puede donar sangre", "si puede donar sangre";
+		//casos de prueba: antibioticos
+		//resultado: " no puede donar"
+		definir antibioticos, tatuajes, pesoMenosDe50 como logicos;
+		
+		//inicializacion de variables
+		
+		antibioticos<-verdadero;
+		tatuajes<-verdadero;
+		pesoMenosDe50<-verdadero;
+		
+		escribir " ¿consume antibioticos( si=1/no=0)?";
+		leer antibioticos;
+		escribir "¿tiene tatuajes ( si=1/no=0)?";
+		leer tatuajes;
+		escribir "¿pesa menos de 50 kg (si=1/no=0)?";
+		leer pesoMenosDe50;
+		
+		Si antibioticos o tatuajes o pesoMenosDe50 Entonces
+			escribir " no puede donar sangre";
+		SiNo
+			escribir " si puede donar sangre";
+		Fin Si
+		
+FinAlgoritmo

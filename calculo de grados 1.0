@@ -1,0 +1,30 @@
+Algoritmo calculoDeGrados
+		//entradas:gradosCelcius
+		//salidas:temperaturaAlta, temperaturaBaja, gradosFahrenheit
+		//casos de prueba: 25.5
+		//respuesta:temperatura alta, gradosFahrenheit:77.9
+		definir gradosCelcius como reales;
+		definir gradosFahrenheit como reales;
+		
+		//inicializacion de variables
+		
+		gradosCelcius<-0.0;
+		gradosFahrenheit<-0.0;
+		
+		escribir "proporciones los grados celcius";
+		leer gradosCelcius;
+		
+		gradosFahrenheit<-((gradosCelcius*1.8)+32);
+		
+		Si gradosCelcius >25 Entonces
+			escribir "temperatura alta";
+			escribir "la temperatura en grados fahrenheit es:", gradosFahrenheit;
+			
+		SiNo
+			escribir "temperatura baja";
+			escribir "la temperatura en grados fahrenheit es:", gradosFahrenheit;
+		Fin Si
+		
+FinAlgoritmo
+
+

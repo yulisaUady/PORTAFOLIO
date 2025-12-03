@@ -1,0 +1,26 @@
+
+	Algoritmo distanciaCoordenadas
+		//entradas: coorX, coorY
+		//salidas:distancia
+		// casos de prueba: 7,8
+		//resultado: el punto no esta a menos de 5 metros del punto de origen 
+		definir coorX, coorY como reales;
+		definir distancia como real;
+		
+		//inicializacion de variables
+		coorX<-0.0;
+		coorY<-0.0;
+		distancia<-0.0;
+		escribir "proporcione las coordenadas en metros de X";
+		leer coorX;
+		escribir "proporcione las coordenadas en metros de Y";
+		leer coorY;
+		distancia<-(coorX^2+coorY^2)*1/2;
+		Si distancia<5 Entonces
+			escribir "el punto esta a menos de 5 metros del punto de origen";
+		SiNo
+			escribir " el punto no esta a menos de 5 metros del punto de origen";
+		Fin Si
+		
+FinAlgoritmo
+

@@ -1,0 +1,33 @@
+Algoritmo busquedaNum
+	//entrada:matriz, i, j, bandera
+	//salida:num
+		definir matriz, i, j como enteros;
+		definir num como entero;
+		definir bandera como logico;
+		dimension matriz[10,10];
+		//introduciendo valores a matriz
+		para i<-0 hasta 9 Hacer
+			para j<-0 hasta 9 Hacer
+				matriz[i,j]<- aleatorio(0,99);
+			FinPara
+		FinPara
+		//busqueda del numero
+		escribir "proporcione el valor a buscar";
+		leer num;
+		bandera<- Falso;
+		escribir "el numero proporcionado se encuentra en:";
+		para i<-0 hasta 9 Hacer
+			para j<-0 hasta 9 hacer
+				//imprimiento resultados
+				si num=matriz[i,j] entonces 
+					escribir "fila ", i, " columna ", j;
+					bandera<- verdadero;
+				FinSi
+			FinPara
+		FinPara
+		//imprimiendo resultados
+		si bandera= falso Entonces
+			escribir "el numero no se encuentra en la matriz";
+		FinSi
+FinAlgoritmo
+

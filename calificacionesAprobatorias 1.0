@@ -1,0 +1,35 @@
+	Algoritmo calificacionesAprobatorias
+		//entradas: cali
+		//salida: aprobado, reprobado, notable, sobresaliente
+		// casos de prueba: 95
+		//resultado : sobresaliente 
+		definir cali como real;
+		//inicializacion de variables
+		cali<-0.0;
+		escribir " proporcione la calificacion";
+		leer cali;
+		
+		Si cali<70 Entonces
+			escribir " reprobado";
+			escribir " debes de esforzarte mas";
+		SiNo
+			Si cali>=70 y cali<75  Entonces
+				escribir " aprobado";
+				escribir " falta mejorar un poquito mas";
+				
+				
+				
+			SiNo
+				Si cali>=75 y cali<90 Entonces
+					escribir "notable"; 
+					escribir "felicidades, haz mejorado demasiado";
+				SiNo
+					escribir " sobresaliente";
+					escribir "felicidades, haz hecho un gran trabajo";
+				Fin Si
+			Fin Si
+		Fin Si
+		
+		
+FinAlgoritmo
+

@@ -1,0 +1,24 @@
+Algoritmo promedios
+	//entrada:cal1, cal2, cal3, alumn
+	//salida: contador, promedio, promGen, suma
+	//caso de prueba: alumn  1: cal1: 70, cal2: 70, cal3:70, promedio:70, alumn2: cal1:30, cal2: 30 , cal3: 70 promedio:43.33
+	//promGen:56.666667
+		definir promedio, promGen, cal1, cal2, cal3, suma como reales;
+		definir alumn, i, contador como enteros;
+		escribir "proporcione la cantidad de alumnos";
+		leer alumn;
+		contador<-0;
+		suma<-0;
+		para i<-1 hasta alumn Hacer
+			escribir "proporcione sus 3 calificaciones";
+			leer cal1, cal2, cal3;
+			promedio <-(cal1 + cal2 + cal3)/3;
+			contador<-contador +1;
+			escribir " el promedio de el alumno ", contador, " es:", promedio;
+			suma<- suma + promedio;
+			promGen<- suma/alumn;
+		FinPara
+		escribir " el promedio general es: ", promGen;
+FinAlgoritmo
+
+

@@ -1,0 +1,16 @@
+Algoritmo numMayor
+definir n, i, num, ant como entero;
+escribir "proporcione cuantos numeros ingresara";
+leer n;
+num<-0;
+Para i<-1 Hasta n  Hacer
+	escribir "proporcione un numero";
+	leer ant;
+	si ant>num Entonces
+		num<- ant;
+	FinSi
+	
+Fin Para
+escribir "el numero mas grande es:", num;
+
+FinAlgoritmo

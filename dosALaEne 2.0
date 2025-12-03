@@ -1,0 +1,18 @@
+
+	Algoritmo dosALaEne
+		//entrada: n, i
+		//salida:val
+		//caso de prueba: 3
+		definir i, n, val como reales;
+		escribir "hasta que numero desea elevar el 2";
+		leer n;
+		val<-0;
+		escribir " la secuencia es:";
+		Para i<-0 Hasta n Hacer
+			val<-2^i;
+			
+			escribir val, ", ", sin saltar;
+		Fin Para
+		
+FinAlgoritmo
+

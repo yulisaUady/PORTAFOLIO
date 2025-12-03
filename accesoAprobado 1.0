@@ -1,0 +1,36 @@
+Algoritmo accesoAprobado
+	//entradas: opcion1, opcion2, opcion3, opcion4
+	//salidas:denegado,  aceptado
+	//casos de uso: opcion1=1, opcion2=1, opcion3=1, opcion4=2
+	//resultado: usted no tiene el permiso de acceso
+	definir opcion1, opcion2, opcion3, opcion4 como enteros;
+	//inicializacion de variables
+	opcion1<-0;
+	opcion2<-0;
+	opcion3<-0;
+	opcion4<-0;
+	escribir "¿usted es miembro activo?";
+	escribir "1. si";
+	escribir "2. no";
+	leer opcion1;
+	escribir "¿tiene mas de 10 años de antigüedad?";
+	escribir "1. si";
+	escribir "2. no";
+	leer opcion2;
+	escribir "¿esta al dia con su cuota?";
+	escribir "1. si";
+	escribir "2. no";
+	leer opcion3;
+	escribir "¿es miembro honorario?";
+	escribir "1. si";
+	escribir "2. no";
+	leer opcion4;
+	si opcion1=1 y opcion2=1 y opcion3=1 y opcion4=1 Entonces
+		escribir "usted tiene el permiso de acceso";
+	SiNo 
+		escribir "usted no tiene el permiso de acceso";
+		
+	FinSi
+	
+	
+FinAlgoritmo

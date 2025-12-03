@@ -1,0 +1,37 @@
+Algoritmo desviacionEstandar
+	//entradas:m, i, j 
+	//salidas: prom, suma, sumaCuadrados, desviacion 
+	definir m como real;
+	definir i, j como enteros;
+	definir prom, suma, desviacion, sumaCuadrados como reales;
+	suma<-0;
+	sumaCuadrados<-0;
+	dimension m[5,3];
+	//sacando promedio
+	para i<-0 hasta 4 Hacer
+		para j<-0 hasta 2 hacer 
+			escribir "ingrese a[",i, ",", j "]";
+			leer m[i,j];
+			suma<- suma + m[i,j];
+		FinPara
+	FinPara
+	prom<- suma/(5*3);
+	//restando a cada valor el promedio
+	para i<-0 hasta 4 Hacer
+		para j<- 0 hasta 2 Hacer
+			m[i,j]<- m[i,j] - prom;
+		FinPara
+	FinPara
+	//elevando al cuadrado la resta anterior y sumandolos todos
+	para i<- 0 hasta 4 hacer 
+		para j<-0 hasta  2 hacer 
+			m[i,j]<- m[i,j]^2;
+			sumaCuadrados<- sumaCuadrados + m[i,j];
+		FinPara
+	FinPara
+	//sacando la desviacion estandar
+	desviacion<- sumacuadrados/(5*3);
+	desviacion<- desviacion^(1/2);
+	escribir "la desviacion estandar es: " desviacion;
+FinAlgoritmo
+

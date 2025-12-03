@@ -1,0 +1,38 @@
+
+	Algoritmo inclinacionRecta
+		//entrada:coorX1,coorY1,coorX2, coorY2
+		//salida:inclinacion
+		//casos de prueba 10,11 y 2,3
+		//resultado: 45 grados
+		definir coorX1,coorY1,coorX2, coorY2 como reales;
+		definir inclinacion, m, grad como reales;
+		//inicializacion de variables
+		coorX1<-0.0;
+		coorX2<-0.0;
+		coorY1<-0.0;
+		coorY2<-0.0;
+		escribir "proporcione la coordenada de x1";
+		leer coorX1;
+		escribir "proporcione la coordenada de y1";
+		leer coorY1;
+		escribir "proporcione la coordenada de x2";
+		leer coorX2;
+		escribir " proporcione la coordenada de y2";
+		leer coorY2;
+		m<-(coorY1-coorY2)/(coorX1-coorX2);
+		Si m<0 Entonces
+			escribir " la inclinacion es negativa";
+		SiNo
+			si m>0 Entonces
+				escribir "la incliancion es positiva";
+			FinSi
+		Fin Si
+		inclinacion<-atan(m);
+		grad<-(inclinacion*180)/pi;
+		escribir " el valor de la inclinacion en grados es:", grad;
+		
+		
+		
+FinAlgoritmo
+
+

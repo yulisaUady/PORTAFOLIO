@@ -1,0 +1,27 @@
+Algoritmo matrizDiagonal
+		//entradas: m, n , i, j
+		//salidas: diagonal
+		definir i, j, n como enteros;
+		definir m como entero;
+		definir diagonal como logico;
+		diagonal<- verdadero;
+		n<-3;
+		dimensionar m[n,n];
+		//leer valores de la matriz
+		para i<-0 hasta n-1 hacer
+			para j<-0 hasta n-1 hacer
+				escribir "el valor de [", i, ",", j, "]";
+				leer m[i,j];
+				si i<> j y m[i,j] <>0 Entonces
+					diagonal <- falso;
+				FinSi
+			FinPara
+		FinPara
+		//verificar si es diagonal
+		si diagonal = verdadero entonces 
+			escribir "la matriz es diagonal";
+		SiNo 
+			escribir " la matriz no es diagonal";
+		FinSi
+FinAlgoritmo
+

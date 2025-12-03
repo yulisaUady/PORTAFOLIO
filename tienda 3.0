@@ -1,0 +1,81 @@
+Algoritmo tienda
+	//entrada:a, b, presupuesto, i, seleccionado,
+	//salida: opc, suma, cont, resp
+	//caso  de prueba: presupuesto=10, opc:5, resp:n
+	//seleccionado: agua, suma: 10
+		definir a como cadena;
+		definir b como real;
+		definir presupuesto, i, suma, cont, opc como enteros;
+		definir seleccionado como cadena;
+		definir resp como caracteres;
+		dimensionar a[10];
+		dimensionar b[10];
+		dimensionar seleccionado[10];
+		a[0]<-"coca";
+		a[1]<-"jugo";
+		a[2]<-"pan";
+		a[3]<-"sabrita";
+		a[4]<-"leche";
+		a[5]<-"agua";
+		a[6]<-"galleta";
+		a[7]<-"jabon";
+		a[8]<-"shampoo";
+		a[9]<-"dulces";
+		
+		b[0]<-10;
+		b[1]<-20;
+		b[2]<-30;
+		b[3]<-10;
+		b[4]<-5;
+		b[5]<-10;
+		b[6]<-11;
+		b[7]<-12;
+		b[8]<-13;
+		b[9]<-15;
+		
+		escribir "proporcione su presupuesto";
+		leer presupuesto;
+		resp<- "s";
+		cont<-0;
+		suma<-0;
+		resp<- Minusculas(resp);
+		
+		
+		mientras resp="s" Hacer
+			escribir "lista de articulos";
+			para i<-0 hasta 9 hacer 
+				escribir i , " " a[i], " $", b[i];
+			FinPara
+			escribir " seleccione  el numero en el que pertenece su articulo";
+			leer opc;
+			si opc<0 o opc >9 entonces 
+				escribir " opcion no valida";
+				escribir "desea seleccionar otro articulo?(s/n)";
+				leer resp;
+				
+			SiNo
+				si b[opc] > presupuesto entonces 
+					escribir "se excede del presupuesto dado";
+					escribir " desea seleccionar otro articulo? (s/N)";
+					leer resp;
+			    SiNo
+					presupuesto<- presupuesto- b[opc];
+					suma<- suma + b[opc];
+					seleccionado[cont]<-a[opc];
+					cont<-cont +1;
+					escribir "presupuesto restante: ", presupuesto;
+					escribir "desea seguir selccionando mas articulos? (s/n)";
+					leer resp;
+					
+				FinSi
+				
+			FinSi
+		FinMientras
+		escribir "articulos seleccionados:";
+		para i<- 0 hasta cont-1 Hacer
+			escribir seleccionado[i];
+		FinPara
+		escribir " el total a pagar es: ", suma;
+FinAlgoritmo
+
+

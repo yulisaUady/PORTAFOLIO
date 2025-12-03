@@ -1,0 +1,18 @@
+
+Algoritmo sumaCuadrados
+	//entrada: limite, indice
+	//salida:suma
+	//casos de prueba:2
+	//resultado: 5
+		definir limite, indice como enteros;
+		definir suma como entero;
+		escribir "¿hasta que numero quieres sumar?";
+		leer limite;
+		suma<-0;
+		para indice<-1 hasta limite hacer 
+			suma<-suma + indice^2;
+		FinPara
+		escribir " la sumatoria de los numeros dados es de :", suma;
+FinAlgoritmo
+
+

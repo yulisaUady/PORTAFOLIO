@@ -1,0 +1,26 @@
+
+	Algoritmo clasificacionDeUnNumero
+		
+		//entrada:cifra
+		//salida:positivo, negativo, cero
+		//caso de prueba: 10
+		//resultado: positivo
+		
+		definir cifra como entero;
+		//inicializacion de varibles
+		cifra<-0.0;
+		escribir "proporcione el numero";
+		leer cifra;
+		
+		si cifra>0 Entonces;
+			escribir "el numero es positivo";
+		fin si
+		si cifra=0 Entonces
+			escribir "el numero es cero";
+		fin si
+		Si cifra <0 Entonces
+			escribir " el nUmero es negativo";
+		Fin Si
+		
+FinAlgoritmo
+

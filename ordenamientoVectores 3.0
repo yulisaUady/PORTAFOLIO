@@ -1,0 +1,42 @@
+Algoritmo ordenamientoVectores
+	//entrada: a, b, i, k, aux, pos
+	//salida: c
+		definir a, b, c como enteros;
+		definir aux, i, pos, k como enteros;
+		dimension a[10];
+		dimension b[10];
+		dimension c[20];
+		//escribiendo valores de el vector a
+		para i<-0 hasta 9 hacer 
+			escribir "proporcione los valores del vector a en forma ascendente";
+			leer a[i];
+		FinPara
+		//escribiendo valores del vector b
+		para i<- 0 hasta 9 hacer 
+			escribir "proporcione los valores del vector b en  forma ascendente";
+			leer b[i];
+		FinPara
+		k<-0;
+		para i<-0 hasta 9 Hacer
+			c[k]<- a[i];
+			k <- k+1;
+		FinPara
+		para i<-0 hasta 9 Hacer
+			c[k]<-b[i];
+			k<- k +1;
+		FinPara
+		//ordenando los valores en el vector c
+		para i<-1 hasta 19 hacer 
+			pos<- i;
+			aux<- c[i];
+			mientras pos>0 y c[pos-1]> aux Hacer
+				c[pos]<-c[pos-1];
+				pos<- pos-1;
+			FinMientras
+			c[pos]<- aux;
+		FinPara
+		para i<- 0 hasta 19 hacer 
+			escribir c[i];
+		FinPara
+FinAlgoritmo
+
